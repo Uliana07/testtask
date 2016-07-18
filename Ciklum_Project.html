@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Ciklum_Task</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <style>
+            header{
+                padding:5px;
+                border-bottom:2px solid white;
+            }
+            .container {
+            position: fixed;
+  z-index: 1000;
+background-color: white;
+  width: 1345px;
+                height: 70px;
+                margin-top: -5px;
+            }
+            a.gallery-item{
+                height:250px;
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-position:center center;
+            }
+            #main{
+                margin-top:25px;
+            }
+            #Microsoft {
+                height:23px;
+                width:110px;
+            }
+            li {
+                color: black;
+                font-size: 15px;
+                font-family: "Segoe UI","wf_segoe-ui_normal", "Arial",sans-serif;
+            }
+            a {
+            color: black;
+            }
+            #search-button {
+                 height:35px;
+                margin-top: -10px;
+            }
+            #basket-button {
+            height:25px;
+            margin-top: -10px;
+            margin-left: -10px;
+            }
+           #SearchInput {
+           width: 220px;
+               height: 40px;
+               margin-top: 10px;
+           }
+            #entrance-button {
+            font-size: 12px;
+            }
+            .laptop_woman {
+            background: url("https://pp.vk.me/c636123/v636123277/14adf/LdB7nHtXv7c.jpg");
+            background-repeat: no-repeat;
+            position:relative;
+            background-size: 1368px 550px;;    
+            }
+            .top-section__container {
+            height:700px;
+            width: 650px;
+            margin-left: 150px;
+            margin-top: 60px;
+            padding: 50px;
+            }
+             .top-section__container h1{
+                letter-spacing: 5px;
+                color: #696969;
+                font-weight: normal;
+                   font-family: "Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+                 font-size: 48px;
+            }
+            .top-section__container h2{
+                color: grey;
+                letter-spacing: 5px;
+                font-weight: normal;
+                   font-family: "Segoe UI", Batang,sans-serif;
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+           .btn-primary {
+                width: 700px;
+                height: 60px;
+                font-size: 23px;
+               margin-bottom: 30px;
+           }
+            .try-business-right-now {
+            text-decoration: underline;
+            color: #3366BB;
+            font-size: 17px;    
+            }
+            .or {
+                font-size: 17px;
+                color: grey;
+            }
+            .dark-blue-background {
+                width:1360px;
+                height:  497px;
+            background-color: #323a45;
+                margin-top: -150px;
+            }
+            .dark-blue-background h2 {
+            font: 400 30px/1.30435 "Segoe UI Light",sans-serif;
+            text-align: center;
+            color: white;
+            font-weight: normal;
+            padding-top: 150px;
+                margin-bottom: 70px;
+            }
+            .horisontal-align {
+            text-align: center;
+                float:left;
+                margin-left: 10px;
+            }
+
+          #signup_name {
+    background-image: url("https://cdn4.iconfinder.com/data/icons/mayssam/512/user-128.png");   
+    background-size: 20px 20px;
+    background-repeat: no-repeat;    
+    background-position: 5px;    
+    outline: none;    
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;   
+    border-radius: 5px;   
+    padding-left: 40px;   
+    height: 60px;    
+    width: 280px;
+    margin-left: 90px;
+    font-size: 18px; /*размер шрифта*/
+}
+            #signup_email {
+    background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/699049-icon-6-mail-envelope-closed-128.png");   
+    background-size: 30px 30px;
+    background-repeat: no-repeat; /*Убираем повтор изображения*/   
+    background-position: 4px; /*Позиционируем*/   
+    outline: none; /*убираем стандартную обводку браузера*/   
+    -moz-border-radius: 5px; /*закругляем углы для Mozilla*/  
+    -webkit-border-radius: 5px; /*закругляем углы для Chrome, Safari*/   
+    border-radius: 5px; /*закругляем углы для остальных браузеров*/  
+    padding-left: 50px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+    height: 60px;    
+    width: 280px;
+    margin-left:30px;
+    font-size: 18px; /*размер шрифта*/
+              
+}
+            #signup_password {
+             background-image: url("http://www.freeiconspng.com/uploads/security-icon-7.png");   
+    background-size: 40px 30px;
+    background-repeat: no-repeat; /*Убираем повтор изображения*/   
+    background-position: -4px; /*Позиционируем*/   
+    outline: none; /*убираем стандартную обводку браузера*/   
+    -moz-border-radius: 5px; /*закругляем углы для Mozilla*/  
+    -webkit-border-radius: 5px; /*закругляем углы для Chrome, Safari*/   
+    border-radius: 5px; /*закругляем углы для остальных браузеров*/  
+    padding-left: 50px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+    height: 60px;    
+    width: 280px;
+    font-size: 18px; /*размер шрифта*/   
+    margin-left:-30px;
+            }
+    #button-class {
+    margin-left: -75px;
+        text-align: center;
+    outline: none;    
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;   
+    border-radius: 5px;   
+    padding-left: 30px;   
+        padding-top: 18px;
+        text-transform: uppercase;
+    height: 60px;    
+    width: 330px;
+    font-size: 15px;
+        font-weight: bolder;
+        color: white;
+        background-color: #ff3366;
+    }
+            .text-clicking {
+            font-size: 12px;
+                text-align: center;
+                margin-top: 40px;
+                line-height: 1.8em;
+                color: #747c83;
+            }
+            .underlined-link {
+            text-decoration: underline; 
+            color: #747c83;
+            }
+            .man-in-mask {
+                background-image: url(https://scontent.oculuscdn.com/t64.5771-25/11162714_283652092025521_547216123_n.jpg/eve-valkyrie.jpg);
+            width: 450px;
+            height: 300px;
+            background-repeat: no-repeat;
+opacity: .3;
+text-align: center;
+transition: transform .3s, opacity .3s;
+    transition-property: transform, opacity;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+}
+            /*background-image: url(https://scontent.oculuscdn.com/t64.5771-25/11162714_283652092025521_547216123_n.jpg/eve-valkyrie.jpg);
+            width: 450px;
+            height: 300px;
+            background-repeat: no-repeat;
+            }*/
+            .man-in-mask-change:hover{
+            opacity: 0.9;}
+            .squirrel {
+            background-image: url("http://scontent.oculuscdn.com/t64.5771-25/12504834_1610504179262797_1233001088_n.jpg/luckys-tale.jpg");
+                background-position:0%;
+                width: 450px;
+                height: 300px;
+                background-repeat: no-repeat;
+                opacity: .3;
+text-align: center;
+            }
+            .squirrel-change:hover {
+             opacity: 0.9;}
+            .hall-with-people {
+            background-image: url("https://scontent.oculuscdn.com/t64.5771-25/12680264_165436440535334_659901318_n.jpg/oc3-stage-image.jpg");
+                width: 470px;
+                height: 300px;
+                background-repeat: no-repeat;
+                opacity: .3;
+text-align: center;}
+            .hall-with-people-change:hover {
+             opacity: 0.9;}
+            
+.featured-content h4 {
+color: white;
+padding-top: 165px;
+padding-right: 90px;
+font-size: 12px;
+letter-spacing: 2px;
+color: rgb(164, 165, 166);}
+            
+    .featured-content h3 {
+color: white;
+padding-right: 90px;
+font-size: 22px;
+        font-weight: bold;
+        margin-top: -5px;
+letter-spacing: 2px;}
+          .lucky-tale h4 {
+color: white;
+padding-top: 165px;
+padding-right: 90px;
+font-size: 12px;
+letter-spacing: 2px;
+color: rgb(164, 165, 166);}
+            
+    .lucky-tale h3 {
+color: white;
+padding-right: 90px;
+font-size: 22px;
+        font-weight: bold;
+        margin-top: -5px;
+letter-spacing: 2px;}
+            .oclus-connect h4 {
+color: white;
+padding-top: 165px;
+padding-right: 90px;
+font-size: 12px;
+letter-spacing: 2px;
+color: rgb(164, 165, 166);}
+            
+    .oclus-connect h3 {
+color: white;
+        text-align: center;
+padding-right: 70px;
+font-size: 21px;
+
+        font-weight: bold;
+        margin-top: -5px;
+letter-spacing: 2px;}
+        </style>
+
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul id="black-text-navigation" class="nav navbar-nav navbar-left">
+                            <li><a href="https://www.microsoft.com/uk-ua/">
+                            <img id="Microsoft" src="https://assets.onestore.ms/cdnfiles/onestorerolling-1606-01000/shell/v3/images/logo/microsoft.png" alt="Microsoft Logos">
+                        </a></li>
+                            <li><a href="#">Магазин <i class="glyphicon glyphicon-menu-down"></i></a></li>
+                            <li><a href="#">Продукти <i class="glyphicon glyphicon-menu-down"></i></a></li>
+                             <li><a href="https://support.microsoft.com/uk-ua">Підтримка </a></li>
+                                                      </ul>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><input id="SearchInput" title="Пошук на веб-сайті Microsoft.com" name="q" placeholder="Пошук на веб-сайті Microsoft.com" maxlength="400" tabindex="50" type="search"></input></li>
+                    <li><a href="#"><img id="search-button" src="https://image.freepik.com/free-icon/magnifier-symbol_318-1787.jpg" alt="Search" title="Пошук"></a></li>
+                    <li><a href="https://www.microsoftstore.com/store?Action=DisplayPage&Env=BASE&Locale=uk_UA&SiteID=msmea&id=ThreePgCheckoutShoppingCartPage"><img id="basket-button" src="https://pixabay.com/static/uploads/photo/2015/10/22/16/42/icon-1001596_960_720.png" alt="Search" title="Корзина"></a></li>
+                    <li><a href="#" id="entrance-button">Вхід</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="main">
+                    <div class="laptop_woman">
+            <div class="top-section__container">
+                <h1 class="hero_header">Безопасный доступ, синхронизация и совместная работа</h1>
+                <h2 class="hero_sub-header">Хранение и безопасный доступ к данным&nbsp;—&nbsp;аккаунты Dropbox Business пользуются доверием у системных администраторов и нравятся пользователям.</h2>
+                <div class="try-business-cta"> 
+                    <button onclick="location.href = 'https://www.dropbox.com/business/try'" type="button" class="btn btn-primary" >Попробуйте бесплатную 30-дневную ознакомительную версию</button></div>
+                    <span class="or">или 
+                        <a class="try-business-right-now" href="/business/buy">купите прямо сейчас</a></span></div></div>
+            <div class="dark-blue-background">
+                <h2>Join over 2 million designers already using InVision. Get InVision <b>free</b> forever!</h2>
+           
+              <div class="row" > <form novalidate="novalidate" method="POST" class="signup_form" action="https://projects.invisionapp.com/d/signup/process">
+				<div  id="margin-left" class="col-sm-3" class="horisontal-align"> <p><input  name="name" placeholder="Your name" id="signup_name" value="" autocomplete="off" spellcheck="false" type="text" >
+                </p></div>
+			<div class="col-sm-3" class="horisontal-align"><p>
+				<input name="email" placeholder="Email Address" id="signup_email" value="" autocomplete="off" spellcheck="false" type="text">
+                </p></div>
+			<div class="col-sm-3" class="horisontal-align"><p>
+				<input name="password" placeholder="Create a Password" id="signup_password" value="" autocomplete="off" spellcheck="false" type="password">
+                </p></div>
+			<div  class="col-sm-3" class="horisontal-align" id="button-class"><p class="button">Get Started — Free Forever!</p></div>
+              
+                  </form> </div>
+                <div class="text-clicking"><p>  By clicking "Get Started — Free Forever!" I agree to InVision's <a class="underlined-link" href="/business/buy">Terms of Service.</a>
+                    </p></div>
+            </div>
+        </section>
+<div class="row margin-top-block">
+    <a href="https://www3.oculus.com/en-us/rift/#eve-valkyrie">
+    <div  class="man-in-mask man-in-mask-change col-md-4"> 
+       <div class="featured-content">
+        <h4>FEATURED CONTENT</h4>
+        <h3>EVE: Valkyrie</h3>
+        </div></div> </a>
+    <a href="https://www3.oculus.com/en-us/rift/#luckys-tale">
+        <div class="squirrel squirrel-change col-md-4">
+       <div class="lucky-tale">
+        <h4>INCLUDED WITH ALL RIFT PURCHASES</h4>
+           <h3>Lucky's Tale</h3></div></div></a>
+    <div class="hall-with-people hall-with-people-change col-md-4">
+       <a href="https://www3.oculus.com/en-us/blog/announcing-oculus-connect-3-and-rift-availability-update/">
+        <div class="oclus-connect">
+           <h4>FEATURED STORY</h4>
+           <h3>Announcing Oculus Connect 3 and Rift Availability Update</h3>
+           </div></a></div></div>
+
+</div>
+    </body>
+</html>
